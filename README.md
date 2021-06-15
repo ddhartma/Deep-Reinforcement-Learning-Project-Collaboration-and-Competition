@@ -70,7 +70,6 @@ The workspace contains the following files:
     - two critic neural networks (local and target) which map states to Q-values for action-value training
 - **/notebooks_python/checkpoint_actor.pth**: PyTorch state_dict file containing trained weights for the actor networks.
 - **/notebooks_python/checkpoint_critic.pth**: PyTorch state_dict file containing trained weights for the critic networks.
-- **/notebooks_python/Reacher.app: Downloaded Unity Environment needed to watch a trained agent.
 - **/notebooks_python/unity-environment.log**: Log file repoting the last interaction with the environment.
 
 
