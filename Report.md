@@ -10,7 +10,7 @@
 - [Implementation - Tennis_Trained_Agent.ipynb](#impl_notebook_trained_agent)
 - [Ideas for future work](#ideas_future)
 
-## Implementation - Tennis.ipynb <a name="impl_notebook_train"></a>
+## Implementation - Tennis.ipynb <a id="impl_notebook_train"></a>
 - Open jupyter notebook file ```Tennis.ipynb```
     ### Import important libraries
     - modul ***unityagents*** provides the Unity Environment. This modul is part of requirements.txt. Check the README.md file for detailed setup instructions.
@@ -370,7 +370,7 @@
     env.close()
     ```
 
-## Implementation - ddpg_agent.py <a name="impl_agent"></a>
+## Implementation - ddpg_agent.py <a id="impl_agent"></a>
 - Open Python file ```notebooks_python/ddpg_agent.py```
 - The code basis for **ddpg_agent.py** has been taken from the file **ddpg_agent.py** in the Udacity repo [ddpg-pendulum](https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-pendulum)
     ### Load important libraries
@@ -870,7 +870,7 @@
     ```
 
 
-## Implementation - model.py <a name="impl_model"></a>
+## Implementation - model.py <a id="impl_model"></a>
 - Open Python file ```model.py```
 - The code basis for **model.py** has been taken from the file **model.py** in the Udacity repo [ddpg-pendulum](https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-pendulum)
     ### Import important libraries
@@ -1039,7 +1039,7 @@
     - Batch Normalization seems to further increase training stability. 
 
 
-## Implementation - Tennis_Trained_Agent.ipynb <a name="impl_notebook_trained_agent"></a> 
+## Implementation - Tennis_Trained_Agent.ipynb <a id="impl_notebook_trained_agent"></a> 
 - Open Jupyter Notebook ```Tennis_Trained_Agent.ipynb```
     ### Import important libraries
     - modul ***unityagents*** provides the Unity Environment. This modul is part of requirements.txt. Check the README.md file for detailed setup instructions.
@@ -1120,7 +1120,7 @@
 
         ![image1]
 
-## Ideas for future work <a name="ideas_future"></a> 
+## Ideas for future work <a id="ideas_future"></a> 
 Several parts of the actual implementation could be improved in the future:
 - At the moment there is no asynchronous ([A3C](https://arxiv.org/pdf/1602.01783.pdf)) approach implemented, i.e. we do not use agent parallelization via multi-core CPU threading. Such approaches could speed up learning very efficiently. In addition, samples will be decorrelated because both agents will likely experience different states at any given time. This means, we could remove the ReplayBuffer and therefore simplify the architecture.
 - A more sophisticated hyperparameter tuning could further speed up and stabilize the learning process.
